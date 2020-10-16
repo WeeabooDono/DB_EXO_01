@@ -27,7 +27,7 @@ function dump_var($var)
 	    puis affichez-le simplement pour vérifier.</p>
 	<?php
 		//  ---> A COMPLETER
-        $tab0 = array(8.3, 5.1, 13.8, 17.9, 2.1, 4.0, 1.1, 15.5);
+
 		//  ---> FIN
 	?>
 	<?php
@@ -43,10 +43,7 @@ function dump_var($var)
 	    puis vérifiez simplement.</p>
 	<?php
 		//  ---> A COMPLETER
-	    $tab0[] = 4.2;
-        $tab0[] = 6.9;
-        $tab0[] = 5.4;
-        dump_var($tab0);
+
 		//  ---> FIN
 	?>
 	<?php
@@ -62,7 +59,7 @@ function dump_var($var)
 		--> Valeurs attendues: 17.9</p>
 	<?php
 		//  ---> A COMPLETER
-        $max = max($tab0);
+
 		//  ---> FIN
 	?>
 	<?php
@@ -78,10 +75,7 @@ function dump_var($var)
 	    Vérifiez simplement.</p>
 	<?php
 		//  ---> A COMPLETER
-        for($i = 0; $i < sizeof($tab0); $i++){
-            if($tab0[$i] >= 10) unset($tab0[$i]);
-        }
-        dump_var($tab0);
+
 		//  ---> FIN
 	?>
 	<?php
@@ -96,7 +90,7 @@ function dump_var($var)
 	    --> Valeurs attendues: 8</p>
 	<?php
 		//  ---> A COMPLETER
-        $size = sizeof($tab0);
+
 		//  ---> FIN
 	?>
 	<?php
@@ -114,20 +108,7 @@ function dump_var($var)
 	    --> Valeurs attendues:</p>
 	<?php
 		//  ---> A COMPLETER
-    ?>
-        <table>
-            <tr>
-                <th colspan="8">Tableau :</th>
-            </tr>
-            <tr>
-                <?php
-                foreach($tab0 as $elm){
-                    echo "<td>".$elm."</td>";
-                }
-                ?>
-            </tr>
-        </table>
-    <?php
+
 		//  ---> FIN
 	?>
 	<p class="validation">Point de validation n°1</p>
@@ -139,13 +120,7 @@ function dump_var($var)
 	    puis affichez-le simplement pour vérifier</p>
 	<?php
 		//  ---> A COMPLETER
-        $tab1 = array(
-            'id' => 1,
-            'nom' => 'ExoDB',
-            'ipLocale' => '192.168.200.107',
-            'actif' => 1
-        );
-		dump_var($tab1);
+
 		//  ---> FIN
 	?>
 	<?php
@@ -162,13 +137,7 @@ function dump_var($var)
 	    Affichez-le simplement pour vérifier</p>
 	<?php
 	//  ---> A COMPLETER
-        $tab2 = array(
-            'id' => 4,
-            'nom' => 'Edisson',
-            'ipLocale' => '192.168.200.54',
-            'actif' => 0
-        );
-        dump_var($tab2);
+
 	//  ---> FIN
 	?>
 	<?php
@@ -184,8 +153,7 @@ function dump_var($var)
 	    Affichez-le simplement pour vérifier</p>
 	<?php
 		//  ---> A COMPLETER
-		$tab3 = array($tab1, $tab2);
-		dump_var($tab3);
+
 		//  ---> FIN
 	?>
 	<?php
@@ -202,13 +170,7 @@ function dump_var($var)
 	    Affichez-le simplement pour vérifier</p>
 	<?php
 		//  ---> A COMPLETER
-        $tab3[] = array(
-            'id' => 25,
-            'nom' => 'Radiateur Lyon',
-            'ipLocale' => '192.168.1.31',
-            'actif' => 1
-        );
-		dump_var($tab3);
+
 		//  ---> FIN
 	?>
 	<?php
@@ -223,8 +185,7 @@ function dump_var($var)
 				--> Valeurs attendues: 3</p>
 	<?php
 		//  ---> A COMPLETER
-        $size = sizeof($tab3);
-        echo $size;
+
 		//  ---> FIN
 	?>
 	<?php
@@ -243,27 +204,7 @@ function dump_var($var)
 	    --> Valeurs attendues:  </p>
 	<?php
 		//  ---> A COMPLETER
-		?>
-    <table>
-        <tr>
-            <th>ID</th>
-            <th>Dénomination</th>
-            <th>Adr. IP</th>
-            <th>Actif</th>
-        </tr>
-        <?php
-        foreach($tab3 as $tab){
-            echo "<tr>";
-            echo "<td>".$tab['id']."</td>";
-            echo "<td>".$tab['nom']."</td>";
-            echo "<td>".$tab['ipLocale']."</td>";
-            echo "<td>".$tab['actif']."</td>";
-            echo "</tr>";
-        }
 
-        ?>
-    </table>
-        <?php
 		//  ---> FIN
 	?>
 	<p class="validation">Point de validation n°2</p>

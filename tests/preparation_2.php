@@ -25,14 +25,7 @@ function dump_var($var)
 	</p>
 	<?php
 	    //  ---> A COMPLETER
-	    $dbInfos = array(
-		'host'   => 'localhost',
-		'dbname' => 'db_exercise',
-		'user'   => 'root',
-		'pass'   => ''
-		);
-        $dsn = "mysql:host={$dbInfos['host']}; dbname={$dbInfos['dbname']}; charset=UTF8";
-        $db = new PDO($dsn, $dbInfos['user'], $dbInfos['pass']);
+
 	    //  ---> FIN
 	?>
 	<?php
@@ -59,8 +52,7 @@ function dump_var($var)
 	    dans une variable nommée $res, l'idTechnicien et le nom de tous les techniciens.</p>
 	<?php
 	    //  ---> A COMPLETER
-        $rqt = "SELECT * FROM `technicien`";
-        $res = $db->query($rqt);
+
 	    //  ---> FIN
 	?>
 	<?php
@@ -77,14 +69,7 @@ function dump_var($var)
 		--> Extrait des valeurs attendues: </p>
 	<?php
 	    //  ---> A COMPLETER
-        $techs = array();
-        while ($val = $res->fetch(PDO::FETCH_ASSOC)) {
-            $techs[] = array(
-                'idTechnicien' => $val['idTechnicien'],
-                'nom' => $val['nom']
-            );
-        }
-		dump_var($techs);
+
 	    //  ---> FIN
 	?>
 	<?php
@@ -103,24 +88,7 @@ function dump_var($var)
 	    --> Valeurs attendues:  </p>
 	<?php
 	    //  ---> A COMPLETER
-    ?>
-    <table>
-        <tr>
-            <th>id</th>
-            <th>Nom</th>
-        </tr>
-        <tr>
-            <?php
-            foreach($techs as $tech){
-                echo "<tr>";
-                echo "<td>".$tech['idTechnicien']."</td>";
-                echo "<td>".$tech['nom']."</td>";
-                echo "</tr>";
-            }
-            ?>
-        </tr>
-    </table>
-    <?php
+
 	    //  ---> FIN
 	?>
 	<p class="validation">Point de validation n°4</p>
