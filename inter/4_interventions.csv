@@ -1,0 +1,4 @@
+idMateriel,reference,idIntervention,Ticket_idTicket,date,diagnostic,action
+6,AS37V-7SVN,3,3,2013-01-26 09:18:39,écran noir,Changement dalle
+3,8639103966539,5,5,2013-01-26 11:02:21,Pas de connexion,changement interface réseaux
+2,BBox-BF44EE9,7,2,2013-01-26 12:18:08,extinction après 10 min,changement carte mère
