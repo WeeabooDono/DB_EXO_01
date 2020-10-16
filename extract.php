@@ -24,6 +24,7 @@
                 foreach ($csv_row as $csv_col){
                     echo "<td>".$csv_col."</td>";
                 }
+                //Si le premier elément n'est pas le header (On peut déclarer un header)
                 if($csv_row[0] != 'idMateriel'){
                     // var_dump($csv_row);
                     // effectuer l'update

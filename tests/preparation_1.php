@@ -135,22 +135,22 @@ function dump_var($var)
 	<h1>Préparation N°1, partie 2</h1>
 	<p class="question">7. Créez un tableau associatif $tab1<br/>
 	    dont les clés sont 'id', 'nom', 'ipLocale' et 'actif'<br/>
-	    contenant respectivement les valeurs 1, 'EvalSnir', '192.168.200.107' et 1,<br/>
+	    contenant respectivement les valeurs 1, 'ExoDB', '192.168.200.107' et 1,<br/>
 	    puis affichez-le simplement pour vérifier</p>
 	<?php
 		//  ---> A COMPLETER
         $tab1 = array(
             'id' => 1,
-            'nom' => 'EvalSnir',
+            'nom' => 'ExoDB',
             'ipLocale' => '192.168.200.107',
             'actif' => 1
         );
-        dump_var($tab1);
+		dump_var($tab1);
 		//  ---> FIN
 	?>
 	<?php
 		$hashTab = isset($tab1) ? md5(json_encode($tab1)) : '';
-		if($hashTab === '1b6b2228dd367fb50f1660e143168c5c'):?>
+		if($hashTab === '36358162cbcdbd0cc509406ce46e7007'):?>
 			<p class="bon">Tableau $tab1 correct</p>
 	<?php else:?>
 			<p class="bad">Tableau $tab1 incorrect</p>
@@ -184,13 +184,13 @@ function dump_var($var)
 	    Affichez-le simplement pour vérifier</p>
 	<?php
 		//  ---> A COMPLETER
-        $tab3 = array($tab1, $tab2);
-        dump_var($tab3);
+		$tab3 = array($tab1, $tab2);
+		dump_var($tab3);
 		//  ---> FIN
 	?>
 	<?php
 		$hashTab = isset($tab3) ? md5(json_encode($tab3)) : '';
-		if($hashTab === 'afbc6168931516768654432e3e6bd691'):?>
+		if($hashTab === '17e038cfc837b135b6cac907575d507b'):?>
 			<p class="bon">Tableau $tab3 correct</p>
 	<?php else:?>
 			<p class="bad">Tableau $tab3 incorrect</p>
@@ -208,12 +208,12 @@ function dump_var($var)
             'ipLocale' => '192.168.1.31',
             'actif' => 1
         );
-        dump_var($tab3);
+		dump_var($tab3);
 		//  ---> FIN
 	?>
 	<?php
 		$hashTab = isset($tab3) ? md5(json_encode($tab3)) : '';
-		if($hashTab === '889d451b7d717567c9ef6c800b3ddc1c'):?>
+		if($hashTab === 'aab1642363a745a315485e0f45979fa3'):?>
 			<p class="bon">Tableau $tab3 correct</p>
 	<?php else:?>
 			<p class="bad">Tableau $tab3 incorrect</p>

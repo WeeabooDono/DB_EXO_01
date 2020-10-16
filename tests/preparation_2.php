@@ -27,7 +27,7 @@ function dump_var($var)
 	    //  ---> A COMPLETER
 	    $dbInfos = array(
 		'host'   => 'localhost',
-		'dbname' => 'db_interventions',
+		'dbname' => 'db_exercise',
 		'user'   => 'root',
 		'pass'   => ''
 		);
@@ -84,12 +84,12 @@ function dump_var($var)
                 'nom' => $val['nom']
             );
         }
-        dump_var($techs);
+		dump_var($techs);
 	    //  ---> FIN
 	?>
 	<?php
 		$hashTab = isset($techs) ? md5(json_encode($techs)) : '';
-		if($hashTab === '507a0247e139858fa9efa0f477cdbc96'):?>
+		if($hashTab === 'ba3bc1901cf15a2049ea10d60479af62'):?>
 			<p class="bon">Tableau $techs correct</p>
 	<?php else:?>
 			<p class="bad">Tableau $techs incorrect</p>
